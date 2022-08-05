@@ -1,22 +1,53 @@
+*{
+    margin: auto;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .img{
     background-image: url(../topo.jpg);
     background-position: center bottom;
     background-size: cover;
-    width: 80%;
+   /* width: 80%;*/
     height: 500px;
-    margin: auto;
     border: 1px solid transparent;
+    
 }
 
 .menu{
     background: rgb(65, 62, 62);
+    height: 50px;
+    position: relative;
+}
+
+.menu img{
+    margin: 10px 40px;
+}
+
+.menu nav ul{
+    text-align: right;
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.menu nav li{
+    display: inline-block;
+    list-style: none;
+    border: 1px solid white;
+    padding: 7px;
+    margin: 10px 10px 0 10px;
+    background: rgba(0, 0, 0, 0.39);
+}
+
+.menu nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.8em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
-
-
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
