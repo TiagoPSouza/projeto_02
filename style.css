@@ -1,14 +1,12 @@
-*{
-    margin: auto;
-}
-
 .principal{
-    margin: 0 15%;
+    width: 1024px;
+    margin: auto;
 }
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    
+    margin: 0;
+    padding: 0;
 }
 
 .img{
@@ -48,6 +46,7 @@ body{
     background: rgba(0, 0, 0, 0.39);
     margin: 10px 10px 0 10px;
     padding: 7px;
+    transition: color 0.3s linear;
     
 }
 
@@ -56,7 +55,7 @@ body{
     color: white;
     font-size: 0.8em;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    
+    transition: color 0.3s linear;
 }
 
 .menu nav a:hover{
@@ -81,42 +80,40 @@ main p{
     margin-bottom: 35px;
 }
 
-main .imgs{
-    width: 100%;
-    display: inline-block;
-    text-align: center;
-    margin: 0 8%;
+.imgs{
+    color: #555;
+    padding: 0 100px 50px 100px;
+    overflow: auto;
 }
 
-main .imgs .modelos{
+.modelos{
+    width: 32%;
     float: left;
-    
-}
-
-.modelo01, .modelo02{
-    margin-right: 2%;
+    text-align: center;
 }
 
 article{
     background-image: url(../bg_detalhe.png);
     height: 500px;
     background-size: cover;
-    background-position: right center;
+    background-position: right bottom;
+    padding: 100px;
 }
 
 article h1{
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    
+    text-transform: uppercase;
     margin-bottom: 40px;
 }
 
 article p{
-    text-align: center;
+    text-align: left;
     margin: 20px;
+    line-height: 1.5;
 }
 
-section p{
+section address{
     text-align: center;
     margin: 35px;
 }
